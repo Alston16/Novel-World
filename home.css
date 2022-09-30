@@ -22,3 +22,11 @@ body
     font-family: Arial, Helvetica, sans-serif;
     color: cyan;
 }
+.tab_options
+{
+    float: right;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
