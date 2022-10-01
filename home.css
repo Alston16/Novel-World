@@ -30,3 +30,32 @@ body
     font-size: 20px;
     color: white;
 }
+.search
+{
+    margin: 8px;
+}
+#bar
+{
+    padding: 13px;
+    font-size: 17px;
+    border: solid;
+    float:left;
+    width: 77%;
+    background: white;
+    border-radius: 10px;
+}
+.search button
+{
+    float:right;
+    width: 20%;
+    height: 55px;
+    background: white;
+    border: none;
+}
+.search img
+{
+    height: 55px;
+    width: 100%;
+}
+
+
