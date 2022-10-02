@@ -78,5 +78,9 @@ body
     color:blue;
     text-decoration: underline;
 }
-
+#home_page_novels_title
+{
+    margin-left: 35px;
+    text-decoration: underline;
+}
 
