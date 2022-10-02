@@ -7,6 +7,62 @@
     <title>Novel World</title>
     <link rel="icon" href="icon.png">
     <link rel="stylesheet" href="home.css">
+    <script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+    <script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+    <script type="text/babel">
+        class Novel extends React.Component
+        {
+            render()
+            {
+                var div_style={
+                    float:"left",
+                    width:"190px",
+                    height:"300px",
+                    padding:"15px",
+                    margin:"15px",
+                    marginLeft:"35px",
+                    marginRight:"35px",
+                    textAlign:"center",
+                    backgroundColor:"Gainsboro",
+                    borderRadius:"10px"
+                };
+                var img_style={
+                    borderRadius:"10px"
+                };
+                var h4_style={
+                    margin:"5px"
+                };
+                var p_style={
+                    margin:"0px",
+                    backgroundColor:"#99FFFF",
+                    width:"max-content",
+                    paddingLeft:"10px",
+                    paddingRight:"10px",
+                    borderRadius:"50px",
+                };
+                return(
+                    <div style={div_style}>
+                        <img src={this.props.cover_image} style={img_style}/>
+                        <h4 style={h4_style}>{this.props.novel_name}</h4>
+                        <p style={p_style}>{this.props.genre}</p>
+                    </div>
+                );
+            }
+        }
+        var home_page_n=[{"name":"Earth Through The Ages","image":"ettg","genre":"Fantasy"},
+        {"name":"Hero Of Darkness","image":"hod","genre":"Fantasy"},
+        {"name":"Lord of the Mysteries","image":"lotm","genre":"Mystery"},
+        {"name":"My Angelic System","image":"mas","genre":"Fantasy"},
+        {"name":"Odyssey of the Blind God","image":"obg","genre":"Fantasy"},
+        {"name":"Super God Gene","image":"sgg","genre":"Sci-Fi"},
+        {"name":"Supreme Magus","image":"sm","genre":"Fantasy"},
+        {"name":"The Legendary Mechanic","image":"tlm","genre":"Video Games"},
+        {"name":"Undying Warlord","image":"uw","genre":"Martial Arts"},
+        {"name":"World Online","image":"wo","genre":"Video Games"},];
+        var novels=home_page_n.map((novel,index)=><Novel key={index} cover_image={"cover_images/"+novel["image"]+".jpg"} novel_name={novel["name"]} genre={novel["genre"]}/>)
+        ReactDOM.render(<div>{novels}</div>,document.getElementById("home_page_novels"));
+    </script>
 </head>
 <body>
     <div name="Upper Tab" class="u_tab">
@@ -28,5 +84,7 @@
             <a name="rankinglink" class="redirectinglink" href="./ranking.html">Ranking</a>
         </nav>  
     </fieldset>
+    <h1 id="home_page_novels_title">Recommended Novel</h1>
+    <div id="home_page_novels"></div>
 </body>
 </html>
