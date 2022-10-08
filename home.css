@@ -83,37 +83,4 @@ body
     margin-left: 35px;
     text-decoration: underline;
 }
-.home_page_novel_card
-{
-    float:"left";
-    width:"190px";
-    height:"300px";
-    padding:"15px";
-    margin:"15px";
-    margin-left:"35px";
-    margin-right:"35px";
-    text-align:"center";
-    background-color:"Gainsboro";
-    border-radius:"10px"
-}
-.home_page_novel_card:hover
-{
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
-}
-.home_page_novel_cover
-{
-    border-radius:"10px"
-}
-.home_page_novel_name
-{
-    margin:"5px"
-}
-.home_page_novel_genre
-{
-    margin:"0px";
-    background-color:"#99FFFF";
-    width:"max-content";
-    padding-left:"10px";
-    padding-right:"10px";
-    border-radius:"50px";
-}
+

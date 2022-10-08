@@ -15,11 +15,37 @@
         {
             render()
             {
+                var div_style={
+                    float:"left",
+                    width:"190px",
+                    height:"300px",
+                    padding:"15px",
+                    margin:"15px",
+                    marginLeft:"35px",
+                    marginRight:"35px",
+                    textAlign:"center",
+                    backgroundColor:"Gainsboro",
+                    borderRadius:"10px"
+                };
+                var img_style={
+                    borderRadius:"10px"
+                };
+                var h4_style={
+                    margin:"5px"
+                };
+                var p_style={
+                    margin:"0px",
+                    backgroundColor:"#99FFFF",
+                    width:"max-content",
+                    paddingLeft:"10px",
+                    paddingRight:"10px",
+                    borderRadius:"50px",
+                };
                 return(
                     <div style={div_style}>
-                        <img class={"home_page_novel_cover"} src={this.props.cover_image} style={img_style}/>
-                        <h4 class={"home_page_novel_name"} style={h4_style}>{this.props.novel_name}</h4>
-                        <p class={"home_page_novel_genre"} style={p_style}>{this.props.genre}</p>
+                        <img src={this.props.cover_image} style={img_style}/>
+                        <h4 style={h4_style}>{this.props.novel_name}</h4>
+                        <p style={p_style}>{this.props.genre}</p>
                     </div>
                 );
             }
