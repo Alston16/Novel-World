@@ -1,0 +1,42 @@
+.novel_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}
+
+.novel_button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}
+
+
+.redirectinglink:hover
+{
+    color:#d5db25 !important;
+    text-decoration: underline !important;
+}
+
+* {background-color: "#cff0ff"}
+
+@media only screen and (max-width: 798px) {
+    .novel_card {
+        width: 115px !important;
+        height: 195px !important;
+        margin: 8px !important;
+        padding: 8px !important;
+        border-radius: 5px !important;
+    }
+    .novel_cover{
+        width: 90px !important;
+        height: 120px !important;
+    }
+    .novel_name_container{
+        width: 89px !important;
+        height: 36.19px !important;
+    }
+    .novel_name{
+        font-size: small;
+    }
+    .novel_genre{
+        font-size: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
